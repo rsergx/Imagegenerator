@@ -1,0 +1,23 @@
+# Image Generator App
+
+Three-file minimal React frontend for generating images via an API.
+
+## Files
+- `public/index.html`
+- `src/App.jsx`
+- `README.md` (this file)
+
+## Features
+- Simple prompt input, size selector, and gallery
+- Calls `/api/generate` endpoint (placeholder)
+- Displays loading, error, and download options
+
+## Setup
+1. Create a new React app (`npm create vite@latest` or `npx create-react-app`).
+2. Add TailwindCSS (optional, for better styling).
+3. Copy `index.html` and `App.jsx` into the correct folders.
+4. Implement a backend endpoint:
+   ```js
+   POST /api/generate
+   body: { prompt, size }
+   returns: { images: ["data:image/png;base64,..."] } or URLs
